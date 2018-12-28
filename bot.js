@@ -96,8 +96,3 @@ if (message.content === '!ninja_elarab') {
 client.login(process.env.TOKEN);// لا تغير فيها شيء
 client2.login(process.env.TOKEN2);// لا تغير فيها شيء
 client.login(process.env.TOKEN3);// لا تغير فيها شيء
-client.login(process.env.TOKEN4);// لا تغير فيها شيء
-client.login(process.env.TOKEN5);// لا تغير فيها شيء
-client.login(process.env.TOKEN6);// لا تغير فيها شيء
-client.login(process.env.TOKEN7);// لا تغير فيها شيء
-client.login(process.env.TOKEN8);// لا تغير فيها شيء
