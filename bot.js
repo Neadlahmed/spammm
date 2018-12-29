@@ -104,6 +104,5 @@ message.channel.send(`**[ ${args} ]**`); // محطوط # عشان محد يست�
 
 
 
-
 client.login(process.env.TOKEN);// لا تغير فيها شيء
 client2.login(process.env.TOKEN2);// لا تغير فيها شيء
