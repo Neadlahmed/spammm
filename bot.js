@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js");
+const Discord = require("discord.js");
 const client = new Discord.Client();
 const client2 = new Discord.Client();
 
@@ -88,6 +88,28 @@ if (message.content === '!ninja_elarab') {
         }
       }
 });
+
+
+
+const Discord = require('discord.js');
+const client = new Discord.Client();
+var prefix = "!";
+
+
+  if (command == "say") {
+if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|`**ADMINISTRATOR`ليس لديك صلاحيات**`');
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
+  }
+});
+
+
+
+
+
+
+
+
 
 client.login(process.env.TOKEN);// لا تغير فيها شيء
 client2.login(process.env.TOKEN2);// لا تغير فيها شيء
