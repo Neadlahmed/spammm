@@ -89,19 +89,5 @@ if (message.content === '!ninja_elarab') {
       }
 });
 
-
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
-client.on('message',function(message) {
-    let prefix = البرفلكس";
-let args = message.content.split(" ").slice(1).join(" ");
-if(message.content.startsWith(prefix + "say")) {
-if(!args) return;
-message.channel.send(`**[ ${args} ]**`); // محطوط # عشان محد يستخدم البوت لتبنيد / طرد احد من السيرفر
-}
-});
-
-
 client.login(process.env.TOKEN);// لا تغير فيها شيء
 client2.login(process.env.TOKEN2);// لا تغير فيها شيء
