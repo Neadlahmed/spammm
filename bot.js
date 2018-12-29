@@ -87,21 +87,15 @@ if (message.content === '!ninja_elarab') {
           
         }
       }
+client.on('message',function(message) {
+    let prefix = البرفلكس";
+let args = message.content.split(" ").slice(1).join(" ");
+if(message.content.startsWith(prefix + "say")) {
+if(!args) return;
+message.channel.send(`**[ ${args} ]**`); // محطوط # عشان محد يستخدم البوت لتبنيد / طرد احد من السيرفر
+}
 });
 
-
-
-const Discord = require('discord.js');
-const client = new Discord.Client();
-var prefix = "!";
-
-
-  if (command == "say") {
-if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|`**ADMINISTRATOR`ليس لديك صلاحيات**`');
-   message.channel.sendMessage(args.join("  "))
-   message.delete()
-  }
-});
 
 
 
