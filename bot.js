@@ -1,13 +1,12 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const client2 = new Discord.Client();
+const myid = [''];
+const prefix = ['-'];
 
 client.on('ready', () => {
    console.log(`----------------`);
-   console.log(`سبحان الله والحمد لله ولااله الا الله
- سبحان الله والحمد لله ولااله الا الله
- سبحان الله والحمد لله ولااله الا الله
- `);
+   console.log(`Credit Farmm - Script By : Kahrbaa `);
    console.log(`----------------`);
    console.log(`Loadinng`);
    console.log(`Loadinng.`);
@@ -17,56 +16,38 @@ client.on('ready', () => {
    console.log(`----------------`);
 });
 
+client2.on('ready', () => {
+   console.log(`----------------`);
+   console.log(`2 Account Online ✩' `);
+   console.log(`----------------`);
+});
+
+
 
 client.on('message', message => {
-    if(message.content === '-راتب'){
+    if(message.content === prefix+'راتب'){
         message.channel.send('#daily')
     }
 });
 
 client.on('message', message => {
-    if(message.content === '-مبلغ'){
+    if(message.content === prefix+'مبلغ'){
         message.channel.send('#credits')
     }
 });
 
 client.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#credits')
+    if(message.content === prefix+'ريب'){
+        message.channel.send("#rep "+"<@" + myid + ">")
     }
 });
 
-client2.on('message', message => {
-    if(message.content === '-راتب'){
-        message.channel.send('#daily')
-    }
-});
-
-client2.on('message', message => {
-    if(message.content === '-مبلغ'){
-        message.channel.send('#credits')
-    }
-});
-
-client2.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#credits')
-    }
-});
-
-
-
-client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!ninja_elarab') {
+client.on('message', message => {
+if (message.content === prefix+'spam') {
       let count = 0;
       let ecount = 0;
-      for(let x = 0; x < 70000; x++) {
-        message.channel.send(`*سبحان الله والحمد لله ولااله الا الله
- سبحان الله والحمد لله ولااله الا الله
- سبحان الله والحمد لله ولااله الا الله
- سبحان الله والحمد لله ولااله الا الله
-بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيمبسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم
- sb7an allah sb7an allah **[ " ${x} " ]`)
+      for(let x = 0; x <150000; x++) {
+        message.channel.send(`**  لا تبندووني واللله اني صادق بسبح ربنا مش سباام سبحان الله سبحان الله الله اكبر الله اكبر سبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبر لا تبندووني واللله اني صادق بسبح ربنا مش سباام سبحان الله سبحان الله الله اكبر الله اكبر سبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبر no baan it's spam t's good very good no baan  **[ " ${x} " ]`)
           .then(m => {
             count++;
           })
@@ -75,12 +56,49 @@ if (message.content === '!ninja_elarab') {
       }
 });
 
-client2.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!ninja_elarab') {
+client.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+
+
+if (command == "تحدث") {
+let rank = message.guild.member(message.author).roles.find('name', 'Role.Kahrbaa');
+if (!rank) return message.reply(' ')
+  message.channel.send(args.join("  "))
+    message.delete();
+  }
+});
+
+client2.on('message', message => {
+    if(message.content === prefix+'راتب'){
+        message.channel.send('#daily')
+    }
+});
+
+client2.on('message', message => {
+    if(message.content === prefix+'مبلغ'){
+        message.channel.send('#credits')
+    }
+});
+
+client2.on('message', message => {
+    if(message.content === prefix+'ريب'){
+        message.channel.send('#rep <@286088294234718209>')
+    }
+});
+
+client2.on('message', message => {
+if (message.content === prefix+'spam') {
       let count = 0;
       let ecount = 0;
-      for(let x = 0; x < 70000; x++) {
-        message.channel.send(`** - بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم بسم الله الرحمن الرحيم  **[ " ${x} " ]`)
+      for(let x = 0; x < 150000; x++) {
+        message.channel.send(`** - no baan it's spam t's good very good no baan لا تبندووني واللله اني صادق بسبح ربنا لا تبندووني واللله اني صادق بسبح ربنا مش سباام سبحان الله سبحان الله الله اكبر الله اكبر سبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبر  مش سباام سبحان الله سبحان الله الله اكبر الله اكبر سبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبرسبحان الله سبحان الله الله اكبر الله اكبر **[ " ${x} " ]`)
           .then(m => {
             count++;
           })
@@ -89,5 +107,25 @@ if (message.content === '!ninja_elarab') {
       }
 });
 
-client.login(process.env.TOKEN);// لا تغير فيها شيء
-client2.login(process.env.TOKEN2);// لا تغير فيها شيء
+client2.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+
+
+if (command == "تحدث") {
+let rank = message.guild.member(message.author).roles.find('name', 'Role.Kahrbaa');
+if (!rank) return message.reply(' ')
+  message.channel.send(args.join("  "))
+    message.delete();
+  }
+});
+
+
+client.login(process.env.TOKEN);
+client2.login(process.env.TOKEN2);
